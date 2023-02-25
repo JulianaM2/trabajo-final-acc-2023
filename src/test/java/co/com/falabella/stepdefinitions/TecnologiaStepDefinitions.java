@@ -2,6 +2,7 @@ package co.com.falabella.stepdefinitions;
 
 import co.com.falabella.pages.ResultadosPage;
 import co.com.falabella.pages.VisualizarPage;
+import co.com.falabella.tasks.BuscarEnBarraTask;
 import co.com.falabella.tasks.BuscarEnTecnologiaTask;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
@@ -23,7 +24,7 @@ public class TecnologiaStepDefinitions {
 
     @Cuando("{actor} selecciona una tablet de la marca {string}")
     public void selecciona_una_tablet_de_la_marca_apple(Actor actor, String marca) {
-        actor.attemptsTo(BuscarEnTecnologiaTask.tablet(marca));
+        actor.attemptsTo(BuscarEnBarraTask.tablet(marca));
     }
 
     @Entonces("{actor} debe visualizar la informacion de la tablet y seleccionar su color de preferencia")

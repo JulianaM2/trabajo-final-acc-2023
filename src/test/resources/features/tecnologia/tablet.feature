@@ -1,5 +1,5 @@
 # language: es
-Característica: Tablet
+Característica: Visualizar información producto
 
   Escenario: Visualizar información sobre una tablet de marca Apple
     Cuando "Juliana" selecciona una tablet de la marca "Apple"

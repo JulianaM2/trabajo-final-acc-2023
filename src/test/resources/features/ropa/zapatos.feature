@@ -1,5 +1,5 @@
 # language: es
-Característica: Zapatos
+Característica: Seleccionar talla
 
   Escenario: Buscar por unos zapatos y elegir opciones
     Dado que "Juliana" busca por "Zapatos" en la barra de busqueda

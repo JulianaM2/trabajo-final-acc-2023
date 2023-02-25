@@ -29,10 +29,16 @@ public class ResultadosPage {
     public static final Target BTN_AGREGAR_A_LA_BOLSA = Target
             .the("Tarjeta primer resultado búsqueda de zapatos")
             .locatedBy("//button[@id='add-to-cart']");
-    public static final Target CARD_PRIMER_RESULTADO_ZAPATOS = Target
-            .the("Tarjeta primer resultado búsqueda de zapatos")
-            .locatedBy("//div[@id='testId-pod-10843751']");
-    public static final Target CARD_TECNOLOGIA = Target.the("Id tarjeta de la opción Tecnología")
+    public static final Target CARD_PRIMER_RESULTADO_ZAPATOS = Target.the("Id tarjeta de la primera opción de zapatos")
             .located(By.id("testId-pod-10843751"));
+    public static final Target CARD_PRIMER_RESULTADO_GAFAS = Target
+            .the("Id tarjeta de la primera opción de gafas de sol")
+            .located(By.id("testId-pod-51924554"));
+    public static final Target BTN_PRIMER_RESULTADO_GAFAS = Target
+            .the("Tarjeta primer resultado búsqueda de gafas de sol")
+            .locatedBy("//button[@id='testId-Pod-action-51924550']");
+    public static final Target SPAN_TITULO_MODAL_PRODUCTO_AGREGADO = Target
+            .the("Tarjeta primer resultado búsqueda de zapatos")
+            .locatedBy("//span[@class='copy10 primary  jsx-2889528833 normal      ']");
 
 }

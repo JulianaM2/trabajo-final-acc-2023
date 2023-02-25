@@ -1,5 +1,5 @@
 # language: es
-Característica: Smartphone
+Característica: Buscar producto desde categoría
 
   Escenario: Buscar un smartphone en tecnología
     Cuando "Juliana" busca en la categoria tecnologia por un smartphone
