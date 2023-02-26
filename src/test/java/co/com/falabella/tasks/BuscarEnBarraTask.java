@@ -15,7 +15,7 @@ import net.serenitybdd.screenplay.actions.Scroll;
 
 public class BuscarEnBarraTask {
     public static Performable camisetaMujer(String terminoBusqueda, String marca) {
-        return Task.where("{0} buscar por '" + terminoBusqueda + "'",
+        return Task.where("{0} buscar por '" + terminoBusqueda + "' y filtra",
                 Open.url("https://www.falabella.com.co/falabella-co/"),
                 Enter.theValue(terminoBusqueda)
                         .into(BusquedaPrincipalPage.IN_BARRA_BUSQUEDA)
@@ -28,7 +28,7 @@ public class BuscarEnBarraTask {
     }
 
     public static Performable zapatos(String terminoBusqueda) {
-        return Task.where("{0} busca por zapatos",
+        return Task.where("{0} busca por '" + terminoBusqueda + "' y abre opciones",
                 Open.url("https://www.falabella.com.co/falabella-co/"),
                 Enter.theValue(terminoBusqueda)
                         .into(BusquedaPrincipalPage.IN_BARRA_BUSQUEDA)
@@ -44,7 +44,7 @@ public class BuscarEnBarraTask {
     }
 
     public static Performable tablet(String marca) {
-        return Task.where("{0} busca en tecnologia una tablet",
+        return Task.where("{0} busca en tecnologia una tablet y selecciona color",
                 Open.url("https://www.falabella.com.co/falabella-co/"),
                 Enter.theValue("Tablet " + marca)
                         .into(BusquedaPrincipalPage.IN_BARRA_BUSQUEDA)
@@ -54,7 +54,7 @@ public class BuscarEnBarraTask {
     }
 
     public static Performable gafasDeSol(String terminoBusqueda) {
-        return Task.where("{0} busca por zapatos",
+        return Task.where("{0} busca por '" + terminoBusqueda + "' y agrega a la bolsa",
                 Open.url("https://www.falabella.com.co/falabella-co/"),
                 Enter.theValue(terminoBusqueda)
                         .into(BusquedaPrincipalPage.IN_BARRA_BUSQUEDA)
@@ -63,8 +63,4 @@ public class BuscarEnBarraTask {
                 MoveMouse.to(ResultadosPage.CARD_PRIMER_RESULTADO_GAFAS),
                 Click.on(ResultadosPage.BTN_PRIMER_RESULTADO_GAFAS));
     }
-
-//     private static Performable busquedaBarra(String terminoBusqueda) {
-
-//     }
 }

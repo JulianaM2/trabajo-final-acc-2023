@@ -9,6 +9,6 @@ public class BusquedaPrincipalPage {
             .locatedBy("//div[@id='main-CollapsedCards-5d56c543-e8cd-4fdb-a5ac-80e8bca75916-desktop-card-0']/a");
     public static final Target CARD_TECNOLOGIA = Target.the("Id tarjeta de la opción Tecnología")
             .located(By.id("main-CollapsedCards-5d56c543-e8cd-4fdb-a5ac-80e8bca75916-desktop-card-0"));
-    public static final Target IN_BARRA_BUSQUEDA = Target.the("Opción de celular xiaomi")
+    public static final Target IN_BARRA_BUSQUEDA = Target.the("Caja de texto de la barra de búsqueda")
             .locatedBy("//input[@id='testId-SearchBar-Input']");
 }

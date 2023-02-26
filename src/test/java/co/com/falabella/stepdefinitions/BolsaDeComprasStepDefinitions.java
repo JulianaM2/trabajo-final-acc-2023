@@ -13,9 +13,11 @@ public class BolsaDeComprasStepDefinitions {
         actor.attemptsTo(BuscarEnBarraTask.gafasDeSol(producto));
     }
 
-    @Entonces("{actor} debe ver un mensaje confirmacion y debe poder seguir comprando")
+    @Entonces("{actor} debe ver un mensaje confirmacion")
     public void debe_ver_un_mensaje_confirmacion_y_debe_poder_seguir_comprando(Actor actor) {
         actor.attemptsTo(
+                Ensure.that(ResultadosPage.SPAN_TITULO_MODAL_PRODUCTO_AGREGADO).text()
+                        .isEqualToIgnoringCase("Producto(s) agregado(s) a la bolsa de compras"),
                 Ensure.that(ResultadosPage.SPAN_TITULO_MODAL_PRODUCTO_AGREGADO).text()
                         .isEqualToIgnoringCase("Producto(s) agregado(s) a la bolsa de compras"));
     }

@@ -15,8 +15,8 @@ public class RopaStepDefinitions {
         actor.attemptsTo(BuscarEnBarraTask.camisetaMujer(terminoBusqueda, marca));
     }
 
-    @Entonces("{actor} debe encontrar al menos una opcion con {string}")
-    public void debe_encontrar_al_menos_una_opcion_con(Actor actor, String opcion) {
+    @Entonces("{actor} debe encontrar al menos una opcion")
+    public void debe_encontrar_al_menos_una_opcion_con(Actor actor) {
         actor.attemptsTo(
                 Ensure.that(ResultadosPage.DIV_LISTA_RESULTADO_BUSQUEDA)
                         .containsElements(ResultadosPage.DIV_CARD_RESULTADO_BARRA.getCssOrXPathSelector()));
