@@ -22,15 +22,15 @@ public class ResultadosPage {
             .locatedBy("//img[@id='testId-pod-image-19574589']/..");
     public static final Target BTN_PRIMER_RESULTADO_ZAPATOS = Target
             .the("Tarjeta primer resultado búsqueda de zapatos")
-            .locatedBy("//button[@id='testId-Pod-action-10843740']");
+            .locatedBy("//button[@id='testId-Pod-action-37193030']");
     public static final Target BTN_TALLA = Target
             .the("Botón para seleccionar la talla")
-            .locatedBy("//button[@id='testId-sizeButton-10 US']");
+            .locatedBy("//button[@id='testId-sizeButton-23.5']");
     public static final Target BTN_AGREGAR_A_LA_BOLSA = Target
             .the("Botón para agregar a la bolsa de compras")
             .locatedBy("//button[@id='add-to-cart']");
     public static final Target CARD_PRIMER_RESULTADO_ZAPATOS = Target.the("Id tarjeta de la primera opción de zapatos")
-            .located(By.id("testId-pod-10843751"));
+            .located(By.id("testId-pod-37193032"));
     public static final Target CARD_PRIMER_RESULTADO_GAFAS = Target
             .the("Id tarjeta de la primera opción de gafas de sol")
             .located(By.id("testId-pod-51924554"));
